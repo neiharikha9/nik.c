@@ -1,0 +1,12 @@
+Perform Input Output
+
+int main() {
+    char a = 'A';
+    int b = 25;
+    float c= 12.5f;
+    double d= 45.6789;
+    scanf("%c %d %f %lf", &a ,&b ,&c ,&d);
+    printf("%c %d %.2f %lf", a, b ,c ,d);
+     
+    return 0;
+}
