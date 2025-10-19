@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int radius, side, length, width ;
+    const float pi = 3.1416;
+    scanf("%d %d %d %d",&radius ,&side ,&length ,&width );
+    
+    float a1,p1;
+    a1 = pi * radius * radius;
+    printf("Circle: %.2f ",a1);
+    p1 = 2 * pi * radius;
+    printf("%.2f\n",p1);
+    float a2,p2;
+    a2 = side*side;
+    printf("Square: %.2f ",a2);
+    p2 = 4*side;
+    printf("%.2f\n" ,p2);
+    float a3,p3;
+    a3 = length * width;
+    printf("Rectangle: %.2f ",a3);
+    p3 = 2 * ( length + width );
+    printf("%.2f\n ",p3);
+    return 0;
+}
