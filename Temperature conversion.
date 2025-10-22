@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int c;
+    scanf("%d",&c);
+    float fehr ;
+    fehr = (c * 1.8)+32;
+    printf("%.2f", fehr);
+    
+    return 0;
+}
