@@ -1,0 +1,14 @@
+int main(){
+    int num;
+    printf("enter octal num: ");
+    scanf("%d",&num);
+    int decNum = 0, base = 1;
+    while(num != 0){
+        int rem = num % 10;
+        decNum += rem * base;
+        base *= 8;
+        num /= 10;
+    }
+    printf("decimal num: %d", decNum);
+    return 0;
+}
