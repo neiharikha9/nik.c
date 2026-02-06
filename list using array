@@ -1,0 +1,62 @@
+#include<stdio.h>
+#define MAX 100
+int list[MAX];
+int size = 0;
+
+void insertInbeg(int value){
+    if(size > MAX){
+       printf("list is full !!!");
+    return 0;
+}
+int i;
+for(int i = size; i>0; i++){
+    list[i] = list[i-1];
+  }
+  list[i] = value;
+  size++;
+  printf("element insertd in beginning !!!!\n");
+
+}
+int main(){
+     while(1){
+        printf("1. insert in beginning\n");
+        printf("2. insert at end\n");
+        printf("3. insert at spcified position\n");
+        printf("4. delete from beginning\n");
+        printf("5. delete from end\n");
+        printf("6. delete from specified position\n");
+        printf("7. display list\n ");
+        printf("8. search element in list\n");
+        printf("9. update list element\n");
+        printf("10. sort element of list\n");
+        printf("11. exit\n");
+        int choice;
+        printf("enter  choice: ");
+        scanf("%d",&choice);
+        switch(choice){
+            case 1:
+               break;
+            case 2:
+               break;
+            case 3:
+               break;
+            case 4:
+               break;
+            case 5:
+               break;
+            case 6:
+               break;
+            case 7:
+               break;
+            case 8:
+               break;
+            case 9:
+               break;
+            case 10:
+               break;
+            default:
+            printf("invalid choice !!!!!\n");
+        }
+     }
+    return 0;
+}
