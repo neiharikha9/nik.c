@@ -1,0 +1,59 @@
+#include<stdio.h>
+#define max 100
+int tree[max], index =0;
+void intTree(){
+    for(int i=0 ; i<max ; i++){
+        tree[i] = -1;
+    }
+}
+void insert(int val){
+    if(index < max){
+        tree[index++] = val;
+        printf("Node inserted in tree!!!\n");
+    }
+    else
+    printf("Tree is full !!!\n");
+}
+void levelOrder(){
+  if(index == 0)
+  printf("Tree is empty!!!\n");
+else{
+    for(int i=0 ; i<index ; i++){
+    if(tree[i] != -1)
+    printf("%d", tree[i]);
+  }
+  printf("\n");
+                          }
+}
+int main(){
+    int choice, value;
+    while(1){
+        printf("\n**** Binary Tree Menu ****\n");
+        printf("1. Insert\n");
+        printf("2. Level Order Traversal\n");
+        printf("3. Pre-Order Traversal\n");
+        printf("4. In-Order Traversal\n");
+        printf("Post Order Traversal\n");
+        printf("Exit");
+        printf("Enter Choice");
+        scanf("%d", &choice);
+        switch(choice){
+            case 1:
+            printf("enter value: ");
+            scanf("%d",&value);
+            insert(value);
+              braek;
+            case 2:
+            levelOrder();
+              braek;
+            case 3:
+              braek;
+            case 4:
+              braek;
+            case 5:
+              braek;
+            case 6:
+              break;
+        }
+    }
+}
