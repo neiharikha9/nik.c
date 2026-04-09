@@ -1,0 +1,32 @@
+#include<stdio.h>
+#define max 100
+int tree[max];
+
+int main(){
+    int choice, value;
+    while(1){
+        printf("\n**** Binary Tree Menu ****\n");
+        printf("1. Insert\n");
+        printf("2. Level Order Traversal\n");
+        printf("3. Pre-Order Traversal\n");
+        printf("4. In-Order Traversal\n");
+        printf("Post Order Traversal\n");
+        printf("Exit");
+        printf("Enter Choice");
+        scanf("%d", &choice);
+        switch(choice){
+            case 1:
+              braek;
+            case 2:
+              braek;
+            case 3:
+              braek;
+            case 4:
+              braek;
+            case 5:
+              braek;
+            case 6:
+              braek;
+        }
+    }
+}
